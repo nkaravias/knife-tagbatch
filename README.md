@@ -20,7 +20,7 @@ knife tag batch <operation> <tag string> <knife search regexp> | -l | -d
 Allowed operations are add | remove for creating and removing Chef tags
 
 e.g Add the 'webserver' tag to all nodes that have the web-server role on environment x.
-knife tag add webserver 'role:web-server AND chef_environment=x'
+knife tag batch add webserver 'role:web-server AND chef_environment=x'
 
 Optional arguments:
 
